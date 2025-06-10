@@ -1,0 +1,10 @@
+Reservations
+(
+    [table] => 2
+    [date] => 2025-06-18
+    [time] => 12:50
+    [name] => Marianne D.
+    [email] => mary@yahoo.com
+    [phone] => 07463906693
+)
+

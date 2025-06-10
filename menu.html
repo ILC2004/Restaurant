@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- meta and stylesheets -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Menu - Delish Restaurant</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+<!-- navigation bar -->
+<header>
+  <nav class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Delish Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank"><img src="images/social-media/facebook-icon.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/social-media/instagram-icon.png" alt="Instagram"></a>
+      <a href="https://youtube.com" target="_blank"><img src="images/social-media/youtube-icon.png" alt="YouTube"></a>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- menu section -->
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <!-- filter buttons -->
+    <div class="menu-filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="starters">Starters</button>
+      <button class="filter-btn" data-category="main-course">Main Course</button>
+      <button class="filter-btn" data-category="desserts">Desserts</button>
+      <button class="filter-btn" data-category="beverages">Beverages</button>
+    </div>
+    <!-- each dish is wrapped in a .menu-item element -->
+
+     <div class="menu-items">
+
+      <!-- starter items -->
+      <div class="menu-item" data-category="starters">
+        <img src="images/menu/starter1.jpg" alt="Garlic Bread">
+        <div class="item-details">
+          <h3>Garlic Bread</h3>
+          <p>Crispy bread topped with garlic butter and herbs.</p>
+          <p class="price">£5.99</p> 
+        </div>
+      </div>
+      <div class="menu-item" data-category="starters">
+        <img src="images/menu/starter2.jpg" alt="Bruschetta">
+        <div class="item-details">
+          <h3>Bruschetta</h3>
+          <p>Toasted bread with fresh tomatoes, basil, and mozzarella.</p>
+          <p class="price">£6.99</p> 
+        </div>
+      </div>
+    
+      <!-- main course items -->
+      <div class="menu-item" data-category="main-course">
+        <img src="images/menu/main1.jpg" alt="Grilled Salmon">
+        <div class="item-details">
+          <h3>Grilled Salmon</h3>
+          <p>Freshly grilled salmon served with a side of vegetables.</p>
+          <p class="price">£15.99</p> 
+        </div>
+      </div>
+      <div class="menu-item" data-category="main-course">
+        <img src="images/menu/main2.jpg" alt="Beef Steak">
+        <div class="item-details">
+          <h3>Beef Steak</h3>
+          <p>Juicy beef steak cooked to perfection.</p>
+          <p class="price">£18.99</p> 
+        </div>
+      </div>
+    
+      <!-- dessert items -->
+      <div class="menu-item" data-category="desserts">
+        <img src="images/menu/dessert1.jpg" alt="Chocolate Cake">
+        <div class="item-details">
+          <h3>Chocolate Cake</h3>
+          <p>Rich and decadent chocolate cake with a creamy frosting.</p>
+          <p class="price">£7.99</p> 
+        </div>
+      </div>
+      <div class="menu-item" data-category="desserts">
+        <img src="images/menu/dessert2.jpg" alt="Cheesecake">
+        <div class="item-details">
+          <h3>Cheesecake</h3>
+          <p>Creamy cheesecake with a strawberry topping.</p>
+          <p class="price">£8.99</p> 
+        </div>
+      </div>
+    
+      <!-- beverage items -->
+      <div class="menu-item" data-category="beverages">
+        <img src="images/menu/beverage1.jpg" alt="Fresh Lemonade">
+        <div class="item-details">
+          <h3>Fresh Lemonade</h3>
+          <p>Refreshing lemonade made with fresh lemons and mint.</p>
+          <p class="price">£3.99</p> 
+        </div>
+      </div>
+      <div class="menu-item" data-category="beverages">
+        <img src="images/menu/beverage2.jpg" alt="Iced Coffee">
+        <div class="item-details">
+          <h3>Iced Coffee</h3>
+          <p>Chilled coffee with milk and a hint of vanilla.</p>
+          <p class="price">£4.99</p> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>58A London Rd, Leicester LE2 0QD</p>
+        <p>Phone:0116 223 0123</p>
+        <p>Email: info@delish.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-media">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/social-media/facebook-icon.png" alt="Facebook">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/social-media/instagram-icon.png" alt="Instagram">
+          </a>
+          <a href="https://youtube.com" target="_blank">
+            <img src="images/social-media/youtube-icon.png" alt="YouTube">
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Delish. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript files -->
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/responsive.js"></script>
+</body>
+</html>
