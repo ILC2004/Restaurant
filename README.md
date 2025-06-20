@@ -1,58 +1,55 @@
 Delish Restaurant Website
 
-A responsive and interactive website built for a fictional restaurant called Delish. The website includes multiple sections to showcase the restaurant's menu, reservation system, and contact information, all integrated into a clean and modern design.
+A responsive and interactive website built for a restaurant called Delish. The site includes a modern design, interactive menu, reservation system, contact form and an admin backend.
 
-Live Demo
-https://delish-london-rd.netlify.app/
+Live Demo:
+[https://delish-london-rd.netlify.app/](https://delish-london-rd.netlify.app/)
 
-Technologies Used
+Technologies Used:
+HTML, CSS, JavaScript, PHP, MySQL
 
-    HTML, CSS, JavaScript
+Main Features:
 
-    PHP (for form processing)
+* Home page with welcoming visuals and call-to-action buttons
+* About Us page describing the restaurant’s values
+* Interactive Menu page with category filtering
+* Reservation system (PHP-powered form connected to MySQL)
+* Contact page with form and embedded Google Map
+* Responsive design for desktop and mobile
+* Admin Panel for managing reservations and messages
 
-    MySQL (with delish_db.sql for database structure)
+File Overview:
+/index.html          – Homepage
+/about.html          – Restaurant description
+/menu.html           – Menu listings & filtering
+/reservation.html    – Booking form UI
+/reservation.php     – Reservation form handler
+/contact.html        – Contact form layout
+/contact.php         – Contact form handler
+/admin.html          – Admin login / panel UI
+/admin.php           – Admin backend logic
+/delish\_db.sql       – SQL dump for database schema
+/images/             – Site images
+/styles/             – CSS files
+/scripts/            – JavaScript files
 
-Main Features
+Admin Panel Credentials:
+Username: admin
+Password: admin123
 
-    Home page with welcoming visuals and call-to-action buttons
+Usage Instructions:
 
-    About Us page describing the restaurant’s values
+1. Clone the repo into your web server folder (htdocs or www):
+   git clone [https://github.com/ILC2004/Restaurant.git](https://github.com/ILC2004/Restaurant.git)
 
-    Interactive Menu page with category filtering for foods category
+2. Import database:
 
-    Reservation system allowing users to book tables using a form connected to a PHP backend
+   * Open phpMyAdmin
+   * Create database “delish\_db”
+   * Import delish\_db.sql
 
-    Contact page with form and embedded Google Map
+3. If needed, update DB credentials in reservation.php, contact.php and admin.php
 
-    Responsive design compatible with desktop and mobile browsers
-
-File Overview
-
-    index.html – Homepage with navigation
-
-    about.html – Restaurant description and background
-
-    menu.html – Menu listings with categories and pricing
-
-    reservation.html – Form UI for booking
-
-    reservation.php – Server-side reservation processing
-
-    contact.html – Contact information and form layout
-
-    contact.php – Server-side message processing
-
-    delish_db.sql – SQL dump file to create database tables
-
-    folders: images, styles, scripts – assets and styling
-
-Usage Instructions
-
-    Place the project in your XAMPP or WAMP htdocs directory.
-
-    Open phpMyAdmin and import delish_db.sql to create the required database tables.
-
-    Launch the website at http://localhost/Restaurant/index.html.
-
-    Adjust any database credentials in PHP files if necessary.
+4. Open in browser:
+   Front-end: [http://localhost/Restaurant/index.html](http://localhost/Restaurant/index.html)
+   Admin:     [http://localhost/Restaurant/admin.html](http://localhost/Restaurant/admin.html)
