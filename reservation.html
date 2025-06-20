@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservation - Delish Restaurant</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+</head>
+<body>
+
+  <!-- navigation -->
+  <header>
+    <nav class="nav-container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Delish Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservation.html" class="active">Reservation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><img src="images/social-media/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="images/social-media/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="images/social-media/youtube-icon.png" alt="YouTube"></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- reservation form -->
+  <section class="booking-form">
+    <h2>Book a Table</h2>
+    <form id="reservation-form">
+      <div class="form-group">
+        <label for="table">Selected Table</label>
+        <input type="text" id="table" name="table" readonly />
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required />
+      </div>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+      <button type="submit" class="btn">Book Now</button>
+    </form>
+  </section>
+
+  <!-- table arrangement -->
+  <section class="table-arrangement">
+    <h2>Table Arrangements</h2>
+    <p>Select an available table to book:</p>
+   <div class="table-grid">
+  <div class="table" data-table="1" data-available="true"><span>Table 1</span></div>
+  <div class="table" data-table="2" data-available="true"><span>Table 2</span></div>
+  <div class="table" data-table="3" data-available="true"><span>Table 3</span></div>
+  <div class="table" data-table="4" data-available="true"><span>Table 4</span></div>
+  <div class="table" data-table="5" data-available="true"><span>Table 5</span></div>
+  <div class="table" data-table="6" data-available="true"><span>Table 6</span></div>
+</div>
+
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>58A London Rd, Leicester LE2 0QD</p>
+        <p>Phone: 0116 223 0123</p>
+        <p>Email: info@delish.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-media">
+          <a href="#"><img src="images/social-media/facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="images/social-media/instagram-icon.png" alt="Instagram"></a>
+          <a href="#"><img src="images/social-media/youtube-icon.png" alt="YouTube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Delish. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script src="scripts/reservation.js"></script>
+  <script src="scripts/animations.js"></script>
+</body>
+</html>

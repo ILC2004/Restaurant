@@ -1,0 +1,152 @@
+
+
+/* tablets and small laptops (768px - 1024px) */
+@media (max-width: 1024px) {
+  /* navigation */
+  .nav-links {
+    gap: 15px;
+  }
+
+  .social-media img {
+    height: 20px;
+  }
+
+  /* hero section */
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  /* grid adjustments */
+  .dish-grid,
+  .menu-items,
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* about section */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  /* contact section */
+  .contact-content,
+  .contact-info,
+  .contact-form {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+/* mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  /* hero section */
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* grids & filters */
+  .dish-grid,
+  .menu-items,
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .menu-filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* forms */
+  .reservation form {
+    width: 90%;
+  }
+
+  .about-content,
+  .about-text,
+  .contact-content,
+  .contact-info,
+  .contact-form {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section,
+  .footer-section .social-media {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  /* grids */
+  .dish-grid,
+  .menu-items,
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  /* forms */
+  .reservation form {
+    width: 100%;
+  }
+
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    font-size: 0.9rem;
+  }
+
+  /* images */
+  .about-image img {
+    width: 100%;
+  }
+}

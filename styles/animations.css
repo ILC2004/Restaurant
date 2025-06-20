@@ -1,0 +1,127 @@
+/* animations and transitions */
+
+/* button hover effects */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e65a50;
+    transform: scale(1.05);
+  }
+  
+  /* navigation link hover effects */
+  .nav-links a {
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6f61;
+  }
+  
+  /* social media icon hover effects */
+  .social-media img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+  
+  /* dish card  */
+  .dish-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dish-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* menu item effects */
+  .menu-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* team member */
+  .team-member {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* form input focus effects */
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+    outline: none;
+  }
+  
+  /* fade-in animation for sections */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* fade-in animation to sections */
+  .hero, .featured-dishes, .menu, .reservation, .about, .team, .contact, .map {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .hero {
+    animation-delay: 0.2s;
+  }
+  
+  .featured-dishes {
+    animation-delay: 0.4s;
+  }
+  
+  .menu {
+    animation-delay: 0.6s;
+  }
+  
+  .reservation {
+    animation-delay: 0.8s;
+  }
+  
+  .about {
+    animation-delay: 1s;
+  }
+  
+  .team {
+    animation-delay: 1.2s;
+  }
+  
+  .contact {
+    animation-delay: 1.4s;
+  }
+  
+  .map {
+    animation-delay: 1.6s;
+  }
+  
+  /* smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
